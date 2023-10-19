@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Punto 3</title>
+  </head>
+  <body>
+    <h1>Punto 3 </h1>
+    <p>Todos los valores a ingresar deben ser numericos </p>
+    <script type="text/javascript">
+    alert("ingrese 10 numeros");
+    numeros1 = [];
+    numeros2 = [];
+    numeros1[0]=parseInt(prompt("N°1: "));
+    numeros1[1]=parseInt(prompt("N°2: "));
+    numeros1[2]=parseInt(prompt("N°3: "));
+    numeros1[3]=parseInt(prompt("N°4: "));
+    numeros1[4]=parseInt(prompt("N°5: "));
+    numeros2[0]=parseInt(prompt("N°6: "));
+    numeros2[1]=parseInt(prompt("N°7: "));
+    numeros2[2]=parseInt(prompt("N°8: "));
+    numeros2[3]=parseInt(prompt("N°9: "));
+    numeros2[4]=parseInt(prompt("N°10: "));
+    numeros1 = numeros1.concat(numeros2);
+    numeros1.sort((a,b) => {
+      if (a==b) {
+        return 0;
+      }
+      if (a<b) {
+        return -1;
+      }
+      return 1;
+    })
+    document.write("los numeros ingresados de forma ascendente son " + numeros1);
+    document.write(", y de forma Descreciente son " + numeros1.reverse());
+    </script>
+  </body>
+</html>
